@@ -32,17 +32,28 @@
       </div>
       <div id="content">
         <h1>Xiaoning Yue</h1>
-        <p>Currently, I'm a software engineer at <a href="http://www.cggveritas.com/">CGG</a>, a geoscience global company. I got my MSc degree with top honour from <a href="http://en.ustc.edu.cn/">USTC</a> in June 2013. My rsearch interets include data science, parallel computing with GPU and distribute computing.</p>
+        <p>Currently, I'm a software engineer at <a href="http://www.cggveritas.com/">CGG</a>, a geoscience global company. I got my MSc degree with top honour from <a href="http://en.ustc.edu.cn/">USTC</a> in June 2013. </p>
 
-        <p>You can contact me at <a href = "mailto:ustcyue@gmail.com">ustcyue@gmail.com</a>. My skype username is "ustcyue".</p>
+        <p>You can contact me at <a href = "mailto:ustcyue@gmail.com">ustcyue@gmail.com</a>.</p>
 
         <h2><a name="projects">Projects</a></h2>
-
+        <div><font size="3" color="Black"><strong>Software Developer at CGG (2014-now): </strong></font> High Performance Computing, Signal Processing and Migration Algorithm Design.
+          <div style='margin-top : 10px'>
+            <ul>
+            <li style = 'margin-top : 0px'>Improving a five dimentional interpolation algorithm and port it to GPU. Achived a 50X accelration.</li>
+            <li style = 'margin-top : 5px'>Use Dynamic Time Warping Algorithm to improve Full Wave Inversion and portted it to GPU.</li>
+            <li style = 'margin-top : 5px'>Port Q-Reverse Time Migration to GPU, got 5th position in Above and Beyond 2015 (Highest award for technical innovation in CGG) for this work.</li>
+            <li style = 'margin-top : 5px'>Change the algorithm of a Tau-p De-noise Module(written in MPI and Multi-threading), which improved its efficency by 3 times.</li>
+            <li style = 'margin-top : 5px'>Got 'Excellent'(Top rank) in 2015 performance review.</li>
+            </ul>
+          </div>
+        </div>
+        <br>
         <div><font size="3" color="Black"><strong>P-EFIT (2010-2013): </strong></font> A program used for fusion plasma equilibrium reconstruction developed by me.
           <div style='margin-top : 10px'>
             <ul>
             <li style = 'margin-top : 0px'>In order to fullfill the real-time control requirment, the program was written with CUDA-C. It could complete one compute iteration in 220 micorsecond and was the fastest equilibrium reconstruction program heretofore. </li>
-            <li style = 'margin-top : 5px'>Plasma equilibrium is a kind of program used to identify plasma shape in the nuclear fusion device. It is the basis for fusion plasma shape control. But it conatins a series of complex computation, both numerically and logically, which make its speed much slower compared to the ideal spead for efficient feed-back control. It was originally defined as "non-parallelizable" and all previous attempts trying to parallelize it had failed.</li>  
+            <li style = 'margin-top : 5px'>Plasma equilibrium is a kind of program used to identify plasma shape in the nuclear fusion device. It is the basis for fusion plasma shape control. But it conatins a series of complex computation, both numerically and logically, which make its speed much slower compared to the ideal spead for efficient feed-back control. It was originally defined as "non-parallelizable" and all previous attempts trying to parallelize it had failed.</li>
             <li style = 'margin-top : 5px'>P-EFIT successfuly accelerate this process by more than 10 times while improving its spatial resolution by four times.To achieve this, I designed several parallel algorithms in order to make full use of GPU resources. Including <strong>parallel block-tridiagonal solver</strong>(with DST method), <a href= "./pfix.html"> <strong>tri-diagonal solver</strong></a>, efficient algorithm for <strong>middle-scale(500-5000) matrix multiplication</strong>(two examples <a href = "./mats.html">here</a>), etc. More importantly, these algorithms were carefully optimized based on property of GPU architechture and I had built an efficient data transfer scheme with two host threads, and three buffers.</li>
             <li style = 'margin-top : 5px'>I had been doing this project from July, 2010 to June, 2013 in Computer Engineering Division,<a href="http://english.ipp.cas.cn/"> Institute of Plasma Physics, Chinese Academy of Science.</a> You can find more information about this project in <a href="#publications">my publications</a> and my <a href = "./papers/MT.pdf">master's thesis(in Chinese)</a>.</li>
              <li style = 'margin-top : 5px'>I successfully got a 200000yuan (about $33000) Nature Science Foundation of China in 2012 for this research project.</a>  I was also awarded the national scholarship for graduate student for this work.</li>
@@ -50,18 +61,18 @@
           </div>
         </div>
         <br>
-        <div><font size="3" color="Black"><strong>DPINDP(2013): </strong></font> Work at Data platform in Dianping.com
+        <div><font size="3" color="Black"><strong>DPINDP(2013-2014): </strong></font> Work at Data platform in Dianping.com
           <div style='margin-top : 10px'>
             <ul>
               <li style = 'margin-top : 0px'>My main work in this department was interpreting unstructured data(server logs etc.) into structured data using hadoop and hive(ETL). For example, I had built a data model that tracing users' behaviour after they searched a keyword in our app or website(leave or not? which link they click? the click height etc) based on the server logs. I had also built a data model that traces the events after a push message was sent to one device.</li>
               <li style = 'margin-top : 5px'>I also participate in the development of our own ETL framwork named Pandora. with this framwork, we only need to predefine the input and output schema and write a transform fucntion using plain java, then a map-reduce job would be build and the result would be automaticly loaded into a Hive table.</li>
               <li style = 'margin-top : 5px'>During work, I wrote several UDF and UDTF for Hive in order to use it more conveniently and high efficiently.</li>
                <li style = 'margin-top : 5px'>I had optimized several jobs on the longest path. For example, I had reduced the run time of a job from one hour into 10 minutes.</li>
-               <li style = 'margin-top : 5px'>Recently, I was doing some pretty challenging work, including predicting the finish time of our final data products. Calculating and improving the efficiency of our scheduling system.</li>                
+               <li style = 'margin-top : 5px'>Recently, I was doing some pretty challenging work, including predicting the finish time of our final data products. Calculating and improving the efficiency of our scheduling system.</li>
             </ul>
           </div>
         </div>
-        <br>    
+        <br>
         <div><font size="3" color="Black"><strong>PBW for CSNS (2009): </strong></font> Designed the Proton Beam Window for <a href="http://csns.ihep.ac.cn/english/"> China Spallation Neutron Source</a>.
           <div style='margin-top : 10px'>
             <ul>
@@ -71,7 +82,7 @@
             <li style = 'margin-top : 5px'>I was awarded Outstanding Undergraduate Research Program of USTC for this program.</li>
             </ul>
           </div>
-        </div>    
+        </div>
         <h2><a name="publications">Publications</a></h2>
         <ul>
           <li><a href="./papers/PPCF.pdf">Fast equilibrium reconstruction for tokamak discharge control based on GPU</a>, <strong>Xiaoning Yue,</strong> Bingjia Xiao, Zhengping Luo and Yong Guo. <em>Plasma Physics and Controlled Fusion</em>, 55 085016. <strong>IF 2.369</strong></li>
@@ -100,6 +111,6 @@
         </p>
       </div>
     </div>
-  
+
 
 </body></html>
